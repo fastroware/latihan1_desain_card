@@ -8,7 +8,7 @@ class ProfileCard extends StatelessWidget {
     // Anggap aja data dummy
     final nama = "Mukhlis";
     final jabatan = "Junior Flutter Developer";
-    final foto = "https://ruangmatika.com/navbar-logo.webp";
+    final foto = "assets/images/logo.webp";
 
     return Center(
       child: Card(
@@ -32,7 +32,7 @@ class ProfileCard extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 40,
-                backgroundImage: NetworkImage(foto),
+                backgroundImage: AssetImage(foto),
               ),
               const SizedBox(height: 12),
               Text(
